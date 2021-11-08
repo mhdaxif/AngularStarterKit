@@ -1,27 +1,68 @@
-# MatStarter
+# MatStarter  
+## TODOS
+- [ ] Material Integration
+- [ ] Tailwind Inetration
+- [ ] Configuration settings from BE service.
+- [ ] Lazy load modules
+- [ ] Interceptor service
+- [ ] API service
+- [ ] 7-1 SCSS pattern
+- [ ] Env base setup
+- [ ] AuthGaurd
+- [ ] BroadCaster service
+- [ ] NGXS 
+- [ ] Translation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
-## Development server
+## Project structure
+<pre>
+- src
+|  - app/
+|  |  - modules/
+|  |  |  - feature-a/
+|  |  |  |  - components/ # componets specific to 'feature-module-a' module
+|  |  |  |  - pages/ 
+|  |  |  |  - feature-a.module.ts
+|  |  |  |  - feature-a-routing.module.ts
+|  |  - core/
+|  |  |  - services/ 
+|  |  |  - resolvers/
+|  |  |  - gaurds/
+|  |  |  - interceptors/
+|  |  |  - core.modul.ts
+|  |  - shared
+|  |  |  - models
+|  |  |  - pages/ # 404 page, 403 page, error page etc
+|  |  |  - componets/ 
+|  |  |  - directives/ 
+|  |  |  - pipes/
+|  |  |  - layout/ # layout templates
+|  |  |  - models/
+|  |  |  - translations/ # encapsulate transalation's logic
+|  |  |  - utilities/ # helpers and utilities functions
+|  |  |  - materail-modules/ # import mat modules in one place
+|  |  shared.module.ts
+|  - assets/
+|  |  - fonts/ # font libraries
+|  |  - i18n/ # translation files
+|  - styles/
+|  |  - base/
+|  |    - reset.scss
+|  |    - typography.scss  # Typography rules
+|  |  - components/
+|  |    - buttons.scss
+|  |  - layout/
+|  |    - _navigation.scss  # Navigation
+|  |  - pages/
+|  |    - home.scss
+|  |  - themes/
+|  |    - heme.scss #Default theme
+|  |  - utils/
+|  |    - variables.scss
+|  |    - helpers.scss #Class & placeholders helpers
+|  |  - vendors/
+|  |  styles.scss # import all styles
+ 
+</pre> 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
