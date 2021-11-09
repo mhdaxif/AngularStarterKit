@@ -1,12 +1,13 @@
 # MatStarter  
 ## TODOS
-- [ ] Material Integration
+- [ ] Project structure
+- [x] 7-1 SCSS pattern
+- [x] Material Integration
 - [ ] Tailwind Inetration
 - [ ] Configuration settings from BE service.
 - [ ] Lazy load modules
 - [ ] Interceptor service
 - [ ] API service
-- [ ] 7-1 SCSS pattern
 - [ ] Env base setup
 - [ ] AuthGaurd
 - [ ] BroadCaster service
