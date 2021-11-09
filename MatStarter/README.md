@@ -31,12 +31,11 @@
 |  |  |  - interceptors/
 |  |  |  - core.modul.ts
 |  |  - shared
-|  |  |  - models
 |  |  |  - pages/ # 404 page, 403 page, error page etc
 |  |  |  - componets/ 
 |  |  |  - directives/ 
 |  |  |  - pipes/
-|  |  |  - layout/ # layout templates
+|  |  |  - layouts/ # layout templates
 |  |  |  - models/
 |  |  |  - translations/ # encapsulate transalation's logic
 |  |  |  - utilities/ # helpers and utilities functions
