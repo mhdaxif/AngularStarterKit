@@ -20,5 +20,13 @@ export class AppComponent {
     this.http.get("api/movies").subscribe(res => { 
      this.data["movies"] = res;
     });
+    
+    this.http.get("api/movies/3").subscribe(res => { 
+     this.data["single-movie"] = res;
+    });
+    
+    this.http.get("api/todos").subscribe(res => { 
+     this.data["todos"] = res;
+    });
   }
 }
