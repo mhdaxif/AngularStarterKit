@@ -11,13 +11,14 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {}
 
+  data: any = {}
   ngOnInit() {
     this.http.get("api/users").subscribe(res => { 
-      console.log(res);
+      this.data["users"] = res;
     });
   
-    this.http.get("api/movies/2").subscribe(res => { 
-      console.log(res);
+    this.http.get("api/movies").subscribe(res => { 
+     this.data["movies"] = res;
     });
   }
 }
