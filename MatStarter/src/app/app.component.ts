@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MatStarter';
+ 
+  links = [
+    { title: 'Components', url: '/comps' },
+    { title: 'Home', url: '/' },
+  ]
 }
