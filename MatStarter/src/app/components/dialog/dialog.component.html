@@ -1,9 +1,9 @@
 <div>
-    <h1 mat-dialog-title> {{data?.Title}} </h1> 
-    <p> <small> {{data?.Director}} </small></p>
+    <h1 mat-dialog-title> {{data?.title}} </h1> 
+    <p> <small> {{data?.director}} </small></p>
     <p> <small> {{data?.imdbRating}} </small></p>
-    <p> {{data?.Writer}} </p>
-    <p> {{data?.Actors}} </p>
-    <div class="images"> <img *ngFor="let x of data?.Images" [src]="x"> </div>
+    <p> {{data?.writer}} </p>
+    <p> {{data?.actors}} </p>
+    <div class="images"> <img *ngFor="let x of data?.images" [src]="x"> </div>
     
 </div>

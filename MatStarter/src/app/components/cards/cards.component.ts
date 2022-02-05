@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
@@ -9,7 +10,7 @@ import { DialogComponent } from '../dialog/dialog.component';
 })
 export class CardsComponent implements OnInit {
   @Input() movies: any[] = [];
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private http: HttpClient) { }
 
 
 
@@ -17,9 +18,11 @@ export class CardsComponent implements OnInit {
   }
 
   openDialog(item: any) {
-    console.log(item)
-    this.dialog.open(DialogComponent, {
-      data: item,
-    });
+    this.http.get(`api/movies/${item.id}`).subscribe(x => {
+      this.dialog.open(DialogComponent, {
+        data: x,
+      }); 
+    })
+
   }
 } 
